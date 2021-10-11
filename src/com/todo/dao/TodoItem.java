@@ -11,26 +11,12 @@ public class TodoItem {
     private String due_date;
     private int id;
 
-
-
-	public TodoItem(String title, String desc){
-        this.title=title;
-        this.desc=desc;
-        SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
-        this.current_date=f.format(new Date());
-        
-    }
-    
-    public TodoItem(String title, String desc, String date){
-        this.title=title;
-        this.desc=desc;
-        this.current_date= date;
-    }
     
     public TodoItem(String title, String desc, String date, String category, String due_date){
         this.title=title;
         this.desc=desc;
-        this.current_date= date;
+        SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
+        this.current_date=f.format(new Date());
         this.category = category;
         this.due_date = due_date;
         
@@ -39,6 +25,8 @@ public class TodoItem {
     public TodoItem(String title, String desc, String category, String due_date){
         this.title=title;
         this.desc=desc;
+        SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
+        this.current_date = current_date;
         this.category = category;
         this.due_date = due_date;
         
@@ -93,12 +81,10 @@ public class TodoItem {
 	}
     
 
-	
-
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "[" + this.category + "]" + "＊Item Title: " + this.getTitle() + "\t＊Item Description: " + this.getDesc() + "\t＊Duedate: " + this.due_date + "\t＊Date: " + this.getCurrent_date();
+		return this.id + "." + "[" + this.category + "]" + "Item Title: " + this.getTitle() + "\tItem Description: " + this.getDesc() + "\tDuedate: " + this.due_date + "\tDate: " + this.getCurrent_date();
 	}
 	
 	public String toSaveString() {

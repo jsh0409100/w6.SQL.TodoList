@@ -12,7 +12,7 @@ public class TodoMain {
 	
 		Scanner sc = new Scanner(System.in);
 		TodoList l = new TodoList();
-		l.importData("todoList.txt");
+		//l.importData("todoList.txt");
 		boolean isList = false;
 		boolean quit = false;
 		
@@ -49,17 +49,18 @@ public class TodoMain {
 				TodoUtil.listAll(l, "title", 0);
 				break;
 				
-			case "ls_date":
-				System.out.println(">>> 날짜 순으로 정렬");
+			case "ls_date_a":
+				System.out.println(">>> 날짜 오름차순으로 정렬");
 				TodoUtil.listAll(l, "due_date", 1);
 				break;
 				
-			case "ls_date_desc":
-				System.out.println(">>> 날짜 순으로 정렬");
+			case "ls_date_d":
+				System.out.println(">>> 날짜 내림차순으로 정렬");
 				TodoUtil.listAll(l, "due_date", 0);
 				break;
 				
 			case "ls_cate":
+				System.out.println(">>> 등록된 카테고리");
 				TodoUtil.listCateAll(l);
 				break;
 			
