@@ -12,11 +12,11 @@ public class Menu {
         System.out.println("＊ 목록을 보려면\t\t→ ls");
         System.out.println("＊ 할일 목록을 이름 오름차순으로 보려면\t→ ls_name_a");
         System.out.println("＊ 할일 목록을 이름 내림차순으로 보려면\t→ ls_name_d");
-        System.out.println("＊ 할일 목록을 추가한 순서대로 보려면\t→ ls_date");
-        System.out.println("＊ 할일 목록을 추가한 반대로 보려면\t→ ls_date_desc");
+        System.out.println("＊ 할일 목록을 추가한 순서대로 보려면\t→ ls_date_a");
+        System.out.println("＊ 할일 목록을 추가한 반대로 보려면\t→ ls_date_d");
         System.out.println("＊ 할일 목록의 카테고리 오름차순으로 보려면\t→ ls_cate");
-        System.out.println("＊ 할일 목록의 카테고리를 찾으려면\t→ find_cate 키워드를 넣으세요");
-        System.out.println("＊ 키워드로 할일을 찾으려면\t→ find 키워드를 넣으세요");
+        System.out.println("＊ 카테고리에서 검색하려면\t→ find_cate 키워드를 넣으세요");
+        System.out.println("＊ 제목과 설명에서 검색하려면\t→ find 키워드를 넣으세요");
         System.out.println("＊ 프로그램을 종료하고 싶으면\t→ exit");
         
     }

@@ -60,13 +60,20 @@ public class TodoMain {
 				break;
 				
 			case "ls_cate":
-				System.out.println(">>> 등록된 카테고리");
+				System.out.println(">>> 등록된 카테고리\n");
 				TodoUtil.listCateAll(l);
 				break;
 			
 			case "find_cate":
 				String cate = sc.nextLine().trim();
+				System.out.println("\n");
 				TodoUtil.findCateList(l, cate);
+				break;
+				
+			case "find":
+				String keyword = sc.nextLine().trim();
+				System.out.println("\n");
+				TodoUtil.findList(l, keyword);
 				break;
 				
 			case "exit":
@@ -77,10 +84,7 @@ public class TodoMain {
 				Menu.displaymenu();
 				break;
 				
-			case "find":
-				String keyword = sc.nextLine().trim();
-				TodoUtil.findList(l, keyword);
-				break;
+			
 			
 			default:
 				System.out.println("[Error] 정확한 명령어를 입력하세요. (명령어를 보려면 help를 입력하세요.)");

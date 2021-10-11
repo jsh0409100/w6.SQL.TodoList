@@ -90,7 +90,7 @@ public class TodoUtil {
 			System.out.println(item.toString());
 			count++;
 		}
-		System.out.printf("♡ ! 총 %d개의 항목을 찾았습니다. ! ♡\n", count);
+		System.out.printf("♡ ! 총 %d개의 항목을 찾았습니다. ! ♡\n\n", count);
 	}
 
 	public static void listCateAll(TodoList l) {
@@ -99,7 +99,7 @@ public class TodoUtil {
 			System.out.print(item + " ");
 			count ++;
 		}
-		System.out.printf("\n♡ ! 총 %d개의 카테고리가 등록되어 있습니다. ! ♡\n", count);
+		System.out.printf("\n♡ ! 총 %d개의 카테고리 ! ♡\n", count);
 	}
 	
 	public static void findCateList(TodoList l, String cate) {
